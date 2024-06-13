@@ -1,0 +1,29 @@
+{{> nav}}
+
+<div class="accordion" id="accordionExample">
+  {{#each modules as |module|}}
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{module.id}}"
+        aria-expanded="true" aria-controls="collapse{{module.id}}">
+        {{module.module_title}}
+      </button>
+    </h2>
+    <div id="collapse{{module.id}}" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <ol>
+        {{#each module.lessons as |lesson|}}
+        <li class="accordion-body">
+          <h3>{{lesson.lesson_title}}</h3>
+          <p>click here to view lession</p>
+          <a href="{{lesson.url}}" target="_blank">{{lesson.lesson_title}}</a>
+        </li>
+        {{/each}}
+      </ol>
+    </div>
+  </div>
+  {{/each}}
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/js/mod.js"></script>
+<script src="/js/lessons.js"></script>
