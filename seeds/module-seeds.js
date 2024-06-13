@@ -11,10 +11,10 @@ const moduleData = [
         module_title: 'JavaScript'
     },
     {
-        module_title: 'Node.js'
+        module_title: 'Web APIs'
     },
     {
-        module_title: 'Express.js'
+        module_title: 'Third-Party APIs'
     },
 ];
 
