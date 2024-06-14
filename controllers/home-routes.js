@@ -19,7 +19,7 @@ router.get('/', withEmail, async (req, res) => {
         ]
         });
         const modules = moduleData.map((module) => module.get({ plain: true }));
-        console.log("modules_lessons", modules[0].lessons);
+        
         // modules[0].lessons.sort((a, b) => {
         //     if (a[0] !== b[0]) {
         //         return a[0] - b[0];
