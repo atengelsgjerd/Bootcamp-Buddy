@@ -32,11 +32,11 @@ router.get('/', withEmail, async (req, res) => {
         // // });
         // console.log(lessons);;
 
-
-        res.render('home', { 
-            modules: modules,
-            email: req.session.loggedIn,
-        });
+        res.send("home");
+        // res.render('home', { 
+        //     modules: modules,
+        //     email: req.session.loggedIn,
+        // });
 
     } catch (error) {
         res.json(error)
