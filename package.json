@@ -5,19 +5,24 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "seed": "node seeds/index.js"
+    "seed": "node seeds/index.js",
+    "scss": "node-sass --watch sass/styles.scss -o sass/css"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.7.2",
     "bcrypt": "^5.1.1",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "connect-session-sequelize": "^7.1.7",
     "date-fns": "^3.6.0",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-handlebars": "^7.1.2",
     "express-session": "^1.18.0",
+    "material-icons": "^1.13.12",
+    "node-sass": "^9.0.0",
     "pg": "^8.12.0",
     "sequelize": "^6.37.3"
   }
