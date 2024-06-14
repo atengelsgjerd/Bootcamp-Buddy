@@ -4,7 +4,8 @@ const withEmail = require('../utils/loggedin');
 
 router.get('/', withEmail, async (req, res) => {
     console.log("home");
-    res.send("home");
+    return res.send("home");
+    
     try {
         const moduleData = await Module.findAll({
             include: [{ 
