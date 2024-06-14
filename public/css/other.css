@@ -1,0 +1,34 @@
+body {
+    background-color: #343a40;
+}
+
+#link:hover {
+    color: white;
+}
+.accordion-item {
+    background-color: #bec9d3;
+}
+
+#loginBtn:hover {
+    background-color: #b3e6a783;
+}
+
+#submitBtn:hover {
+    background-color: #b3e6a783;
+}
+
+#logout:hover {
+    background-color: #b3e6a783;
+}
+
+
+
+.accordion {
+    --bs-accordion-btn-bg: #99bba193;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-bg: #bec9d3;
+    --bs-accordion-active-color: black;
+    --bs-accordion-border-color: black;
+    --bs-accordion-focus-border-color: black;
+    --bs-accordion-focus-text: bold;
+}
