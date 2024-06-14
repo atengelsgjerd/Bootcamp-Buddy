@@ -4,9 +4,9 @@ const withEmail = require('../utils/loggedin');
 
 router.get('/', withEmail, async (req, res) => {
     console.log("home");
-    return res.send("home");
+    // return res.send("home");
     
-    try {
+    // try {
         const moduleData = await Module.findAll({
             include: [{ 
                 model: Lessons                
@@ -34,16 +34,16 @@ router.get('/', withEmail, async (req, res) => {
         // // });
         // console.log(lessons);;
 
-        res.send("home");
-        // res.render('home', { 
-        //     modules: modules,
-        //     email: req.session.loggedIn,
-        // });
+       
+        return res.render('home', { 
+            modules: modules,
+            email: req.session.loggedIn,
+        });
 
-    } catch (error) {
-        res.json(error)
-    }
-});
+    // } catch (error) {
+//         res.json(error)
+//     }
+ });
 
 router.get('/login', async (req, res) => {
     if (req.session.loggedIn) {
