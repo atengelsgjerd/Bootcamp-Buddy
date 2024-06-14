@@ -1,5 +1,7 @@
 const Module = require('./module');
 const Lessons = require('./lessons');
+
+// Import the User model
 const User = require('./user');
 
 Module.hasMany(Lessons, {

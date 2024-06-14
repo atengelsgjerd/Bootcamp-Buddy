@@ -3,6 +3,8 @@ const sequelize = require('../config/connection');
 
 class Module extends Model {};
 //module_title
+
+
 Module.init(
     {
         id: {
