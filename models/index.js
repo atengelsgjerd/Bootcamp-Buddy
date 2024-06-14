@@ -1,6 +1,8 @@
-const Module = require('./Module');
-const Lessons = require('./Lessons');
-const User = require('./User');
+const Module = require('./module');
+const Lessons = require('./lessons');
+
+// Import the User model
+const User = require('./user');
 
 Module.hasMany(Lessons, {
     foreignKey: 'module_id',

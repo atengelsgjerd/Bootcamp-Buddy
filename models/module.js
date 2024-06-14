@@ -1,9 +1,11 @@
 const {Model, DataTypes} = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Lessons extends Model {};
+class Module extends Model {};
+//module_title
 
-Lessons.init(
+
+Module.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -11,29 +13,17 @@ Lessons.init(
             primaryKey: true,
             autoIncrement: true
         },
-        lesson_title: {
+        module_title: {
             type: DataTypes.STRING,
             allowNull: false
-        },
-        url: {
-            type: DataTypes.STRING,
-            // allowNull: false
-        },
-        module_id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            references: {
-                model: 'module',
-                key: 'id'
-            }
         },
     },
     {
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'lessons'
+        modelName: 'module'
     }
 );
 
-module.exports = Lessons;
+module.exports = Module;
