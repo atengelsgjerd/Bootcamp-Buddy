@@ -23,6 +23,7 @@
 //     .addEventListener('click', loginFormFunction);
 
     const loginFormFunction = async (event) => {
+        console.log('login form function');
         event.preventDefault();
     
         const email = document.querySelector('#email').value.trim();
