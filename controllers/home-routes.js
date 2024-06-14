@@ -3,7 +3,8 @@ const { Module, Lessons} = require('../models');
 const withEmail = require('../utils/loggedin');
 
 router.get('/', withEmail, async (req, res) => {
-
+    console.log("home");
+    res.send("home");
     try {
         const moduleData = await Module.findAll({
             include: [{ 
