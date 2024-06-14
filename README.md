@@ -27,7 +27,9 @@ One of the hardest and most time-consuming obstacles was finding resources and t
 
 - Once a new user has created an account or has an account and is logged in at the HOME page  https://bootcamp-buddy.onrender.com , will be redirected to the Subjects Page and be able to select different Subjects such as HTML, CSS etc. once the person has selected a subject there will be various links and documents that refer to that subjects such as HTML, CSS etc.
 
-![alt text](assets/images/image.png)
+![alt text](https://github.com/atengelsgjerd/Bootcamp-Buddy/blob/main/assets/images/image.png)
+
+
 
 
 ## Installation
