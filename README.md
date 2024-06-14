@@ -30,8 +30,6 @@ One of the hardest and most time-consuming obstacles was finding resources and t
 ![alt text](https://github.com/atengelsgjerd/Bootcamp-Buddy/blob/main/assets/images/image.png)
 
 
-
-
 ## Installation
 
 * Nothing to install works on a Browser via Link above.
