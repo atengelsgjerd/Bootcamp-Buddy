@@ -25,7 +25,7 @@ router.post('/', async (req, res) => {
 // LOGIN user
 router.post('/login', async (req, res) => {
     console.log("login route");
-    try {
+    // try {
         const userData = await User.findOne({
             where: {
                 email: req.body.email,
@@ -53,11 +53,13 @@ router.post('/login', async (req, res) => {
             res
             .status(200)
             .json({user: userData, message: 'You are now logged in!'});
+            return;
         });
-    } catch (err) {
-        console.log(err);
-        res.status(500).json(err);
-    }
+    // } catch (err) {
+    //     console.log(err);
+    //     res.status(500).json(err);
+    // }
+    console.log("login route end");
 });
 
 // LOGOUT user

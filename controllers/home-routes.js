@@ -3,8 +3,10 @@ const { Module, Lessons} = require('../models');
 const withEmail = require('../utils/loggedin');
 
 router.get('/', withEmail, async (req, res) => {
-
-    try {
+    console.log("home");
+    // return res.send("home");
+    
+    // try {
         const moduleData = await Module.findAll({
             include: [{ 
                 model: Lessons                
@@ -17,7 +19,7 @@ router.get('/', withEmail, async (req, res) => {
         ]
         });
         const modules = moduleData.map((module) => module.get({ plain: true }));
-        console.log("modules_lessons", modules[0].lessons);
+        
         // modules[0].lessons.sort((a, b) => {
         //     if (a[0] !== b[0]) {
         //         return a[0] - b[0];
@@ -32,16 +34,16 @@ router.get('/', withEmail, async (req, res) => {
         // // });
         // console.log(lessons);;
 
-
-        res.render('home', { 
+       
+        return res.render('home', { 
             modules: modules,
             email: req.session.loggedIn,
         });
 
-    } catch (error) {
-        res.json(error)
-    }
-});
+    // } catch (error) {
+//         res.json(error)
+//     }
+ });
 
 router.get('/login', async (req, res) => {
     if (req.session.loggedIn) {
