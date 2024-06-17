@@ -3,7 +3,7 @@ body {
 }
 
 .accordion-body a:hover {
-    color: white;
+    color: white !important;
 }
 .accordion-item {
     background-color: #bec9d3;
