@@ -2,7 +2,7 @@ body {
     background-color: #343a40;
 }
 
-.accordion-body #link:hover {
+.accordion-body a:hover {
     color: white;
 }
 .accordion-item {
