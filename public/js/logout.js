@@ -17,7 +17,7 @@ const logout = async () => {
         const response = await axios.post('/api/users/logout', {}, {
             headers: { 'Content-Type': 'application/json' }
         });
-        if (response.status === 200) {
+        if (response.status === 204) {
             document.location.replace('/login');
         } else {
             alert('Failed to log out');
