@@ -14,7 +14,7 @@
 
 const logout = async () => {
     try {
-        const response = await axios.post('/api/users/logout', null, {
+        const response = await axios.post('/api/users/logout', {}, {
             headers: { 'Content-Type': 'application/json' }
         });
         if (response.status === 200) {
