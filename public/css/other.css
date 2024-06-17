@@ -3,7 +3,7 @@ body {
 }
 
 .accordion-body a:hover {
-    color: rgba(106, 209, 125, 0.444) !important;
+    color: white !important;
 }
 .accordion-item {
     background-color: #bec9d3;
@@ -34,6 +34,6 @@ body {
 }
 
 .accordion-header button[aria-expanded="true"] h2 {
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.5em !important;
+    font-weight: bold !important;
 }
