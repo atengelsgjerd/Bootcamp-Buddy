@@ -18,7 +18,7 @@ const logout = async () => {
             headers: { 'Content-Type': 'application/json' }
         });
         if (response.status === 200) {
-            document.location.replace('/');
+            document.location.replace('/login');
         } else {
             alert('Failed to log out');
         }
