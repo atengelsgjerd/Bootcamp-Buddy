@@ -33,7 +33,7 @@ body {
     --bs-accordion-focus-text: bold;
 }
 
-.accordion-header button[aria-expanded="true"] h2 {
+.accordion-header button[aria-expanded="true"] {
     font-size: 1.5em !important;
     font-weight: bold !important;
 }
