@@ -33,11 +33,6 @@ app.use(session(sess));
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-// app.get('/css/styles.css', function(req, res) {
-//     res.setHeader('Content-Type', 'text/css');
-//     // Your code to serve the CSS file
-// });
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
